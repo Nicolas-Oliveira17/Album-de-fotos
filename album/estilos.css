@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: linear-gradient(to left bottom, rgb(19, 197, 49), rgb(6, 63, 234));
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.album {/*posição dos elementos na tela*/
+    
+    display: flex;/*como se fosse uma quebra de linha automatica*/
+    
+    flex-wrap: wrap; /* alinhagem*/
+   
+    justify-content: space-evenly;
+    gap: 3vw;
+    padding: 3vw;
+}
+
+.fotos-album img {
+    width: 100%;/*largura*/
+    
+    height: 100%;/*altura*/
+    
+    object-fit: cover;/*forçar manter a proporção da imagem*/
+    
+}
+
+.fotos-album {
+    width: 340px;
+    height: 340px;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px rgb(46, 41, 41); /*desfoque/ sombra / cor */
+   
+    flex-grow: 3;/*ajustar o tamnho da imagem automaticamente*/
+    
+    transition: transform .5s;/*velocidade da imagem*/
+    filter:sepia(100%) hue-rotate(deg) opacity(70%)
+}
+
+
+.fotos-album:hover {
+    transform: scale(1.5);/*tamanho da imagem quando passar o mouse por cima*/
+    filter:opacity(100%)
+     
+}
+
+.criador{
+    background-color: rgb(115, 76, 212);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.h1{
+    text-shadow: 3px 6px 4px rgb(160, 127, 19);
+    border-bottom: double 8px rgb(63, 57, 27) ;
+}
+
+
